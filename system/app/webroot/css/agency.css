@@ -1,0 +1,319 @@
+@CHARSET "UTF-8";
+body{
+	width: 100%;
+	overflow-x: hidden;
+}
+
+/* ヘッダ部 */
+#header{
+	background-color: lime;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	overflow: hidden;
+}
+
+#header .h1{
+	margin-left: 50px;
+	font-size: xx-large;
+	font-style: italic;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	/*width: 30%;*/
+	float: left;
+}
+
+#container{
+	overflow: auto;
+	width: 100%;
+}
+
+/* メニュー部 */
+#menu{
+
+	display: table-cell;
+	background-color: yellow;
+	width: 120px;
+	padding-bottom: 25px;
+	min-width: 120px;
+	max-width: 120px;
+}
+
+#menu .top{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
+#menu .li{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	padding-top: 2px;
+	margin-bottom: 2px;
+	cursor: pointer;
+}
+
+#menu .li:HOVER{
+	color:red;
+}
+
+/* ページ共通部*/
+#content{
+	display: table-cell;
+	background-color: aqua;
+	width: 85%;
+	max-width: 1100px;
+	overflow: auto;
+	margin-right: 20px;
+	padding-right: 10px;
+}
+
+#navigate{
+	border-bottom: 1px solid black;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#navigate .thisPage{
+	display: inline;
+	margin: 2px;
+	background-color: yellow;
+}
+
+#navigate .otherPage{
+	display: inline;
+	margin: 2px;
+}
+
+.formRequired{
+	font-size: small;
+	color: red;
+}
+
+#SubmitButton{
+	width: 100px;
+	height: 40px;
+	font-size: large;
+	background-color: lime;
+}
+
+/* 一覧画面（共通） */
+#listView{
+	width: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#listView table{
+	margin-top: 5px;
+	border: 1px solid black;
+	border-spacing: 0;
+	margin-bottom: 10px;
+	overflow: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#listView tr:nth-child(even){
+	background-color: #48D1CC;
+}
+
+#listView th{
+	padding-left: 3px;
+	padding-right: 3px;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 2px solid black;
+	font-size: 13px;
+	
+	white-space: nowrap;
+}
+
+#listView td{
+	font-size: 13px;
+	border-left: 1px solid black;
+	padding-left: 3px;
+	padding-right: 3px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+/* スタッフ登録画面 */
+#addStaffDiv{
+	width: 100%;
+}
+
+#addStaffTable{
+	/*width: 405px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#addStaffTable td{
+	width: 60%;
+}
+
+#AddStaffAddForm th{
+	padding-right: 5px;
+	width: 40%;
+}
+
+.staff_name{
+	width: 70px;
+}
+
+
+/* 勤怠登録画面 */
+#attendanceRegForm table{
+	border-spacing: 0;
+}
+
+#attendanceRegForm tr:nth-child(4n-2){
+	background-color: orange;
+}
+
+#attendanceRegForm tr:nth-child(4n-3){
+	background-color: orange;
+}
+
+#attendanceRegForm th{
+	/*margin-top: 15px;*/
+	padding-top: 10px;
+	font-size: smaller;
+	/*font-family: fantasy, Meiryo;*/
+}
+
+#attendanceRegForm td{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+}
+
+#attendanceRegForm .worker_name{
+	width: 90px;
+}
+
+#add0 .work_time {
+	width: 70px;
+	ime-mode: disabled;
+}
+
+#add0 .teate{
+	width: 40px;
+	ime-mode: disabled;
+}
+
+.comment{
+	width: 100px;
+}
+
+.serviceDay{
+	width: 130px;
+	ime-mode: disabled;
+}
+
+#showFunctionKey td{
+	width: auto;
+	padding: 0px;
+}
+
+#showFunctionKey input{
+	width: 100px;
+}
+
+#functionChangeButton{
+	height: 80px;
+	background-color: orange;
+}
+
+.suggest{
+	position: absolute;
+	background-color: pink;
+	border: 1px solid #CCCCFF;
+	font-size: 90%;
+	width: 200px;
+}
+
+.suggest div{
+	display: block;
+	width: 200px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.suggest div.select{
+	color: #FFFFDD;
+	background-color: #3366FF;
+}
+
+.suggest div.over{
+	background-color: #99ccff;
+}
+
+/* 案件登録画面 */
+#addMatter{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#addMatter table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 顧客登録画面 */
+#addClient{
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#addClient table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* 一覧画面の検索部 */
+#searchBox{
+	background-color: red;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#searchBoxTable{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#searchButton{
+	background-color: fuchsia;
+	width: 80px;
+	height: 35px;
+}
+
+#searchButtonArea{
+	text-align: center;
+}
+
+
+.modal{
+	display: none;
+}
+
+/* フッタ部 */
+#footer{
+	clear: both;
+	background-color: pink;
+}

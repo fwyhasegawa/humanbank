@@ -1,0 +1,131 @@
+@CHARSET "UTF-8";
+body{
+	background-color: #78FF94;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#container{
+	overflow: hidden;
+}
+
+/* ヘッダー（左側のメニュー）部 */
+#header{
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-right: 20px;
+	/*height: 750px;*/
+	display:inline;
+	/*border: 2px solid black;*/
+	border-right: 2px solid black;
+	float: left;
+}
+
+#header li{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 15px;
+}
+
+#headerTable div{
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
+/* 右側コンテンツ部 */
+
+#user_info{
+	text-align:right;
+	margin-right: 40px;
+	font-size: small;	
+}
+
+
+.addButtonField{
+	
+	text-align: center;
+}
+#control{
+	text-align: center;
+}
+
+#addButton {
+	margin: auto;
+	width: 100px;
+	height: 35px;
+	background-color: #006699;
+	color: white;
+}
+
+#content{
+
+	display: inline;
+	margin-left: 230px;
+}
+
+#content h1{
+	text-align: center;
+}
+
+#content #addForm{
+	margin: auto;
+	text-align: center;
+}
+
+#addForm table{
+	margin: auto;
+}
+
+#addForm td{
+	text-align: left;
+}
+
+#showTable table{
+	margin: auto;
+	border: 2px solid black;
+	border-spacing: 0px;
+}
+
+#showTable tr:nth-child(2n) td{
+	background-color: pink;
+}
+
+
+#showTable th{
+	border-bottom: 1px double black;
+	border-right: 1px solid black;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-weight: bold;
+}
+
+#showTable td{
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-right: 1px solid black;
+}
+
+#searchBox{
+	width: 60%;
+	display:inline;
+	margin: auto;
+}
+
+#searchBox table{
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: auto;
+}
+
+#searchBox th{
+	text-align: right;
+}
+
+.btnEditDelete{
+	background-color: yellow;
+}
